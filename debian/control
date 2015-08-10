@@ -1,0 +1,19 @@
+Source: statifier
+Section: devel
+Priority: extra
+Maintainer: Barak A. Pearlmutter <bap@debian.org>
+Build-Depends: debhelper (>=9),
+		gcc-multilib [any-amd64]
+Standards-Version: 3.9.6
+Homepage: http://statifier.sourceforge.net
+Vcs-Git: git://github.com/barak/statifier.git
+
+Package: statifier
+Architecture: any-amd64 any-i386 any-alpha
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Combine dynamic ELF executable libraries into one file
+ Puts a dynamically linked ELF executable and all its libraries (and
+ all LD_PRELOAD libraries if any) into one file. This file can be
+ copied and run on another machine without needing to drag along its
+ libraries.

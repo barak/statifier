@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 1
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_clean:
+	if test -e config; then dh_auto_clean; fi
+
+override_dh_auto_configure:
+	dh_auto_configure ./configure
