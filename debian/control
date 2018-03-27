@@ -6,7 +6,7 @@ Build-Depends: debhelper (>=9),
 		gcc-multilib [any-amd64]
 Standards-Version: 3.9.6
 Homepage: http://statifier.sourceforge.net
-Vcs-Git: git://github.com/barak/statifier.git
+Vcs-Git: https://github.com/barak/statifier.git
 
 Package: statifier
 Architecture: any-amd64 any-i386 any-alpha
